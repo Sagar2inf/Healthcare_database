@@ -1,3 +1,25 @@
+## Inside Healthcare_Project
+1) create a virtual environment <br>
+2) install following dependencies <br>
+pip install django djangorestframework djangorestframework-simplejwt psycopg2-binary python-dotenv <br>
+3) next run these commands for setting up project directories <br>
+django-admin startproject healthcare_backend . <br>
+
+python manage.py startapp authentication <br>
+python manage.py startapp patients <br>
+python manage.py startapp doctors <br>
+python manage.py startapp mappings <br>
+
+4) create a .env file and put following info in it <br>
+```
+DEBUG=True
+SECRET_KEY=your-secret-key-here
+DB_NAME=healthcare_db
+DB_USER=postgres
+DB_PASSWORD=your-password
+DB_HOST=localhost
+DB_PORT=5432
+```
 
 ### Make migrations for all apps
 python manage.py makemigrations authentication <br>
